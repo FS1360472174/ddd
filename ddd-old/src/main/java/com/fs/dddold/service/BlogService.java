@@ -36,7 +36,7 @@ public class BlogService {
     @Autowired
     private UserDao mUserDao;
 
-    List<BlogVO> getMyBlogList(Long userId) {
+    public List<BlogVO> getMyBlogList(Long userId) {
         // 获取我的博客
         List<BlogPO> blogs = mBlogDao.getMyBlog(userId);
         if (CollectionUtils.isEmpty(blogs)) {
@@ -49,7 +49,7 @@ public class BlogService {
         return Collections.emptyList();
     }
 
-    BlogDetailVO getBlogDetail(Long id) {
+    public BlogDetailVO getBlogDetail(Long id) {
         BlogUserBO blogUserBO = mBlogDao.getBlogById(id);
 
         // 数据parse
@@ -57,7 +57,7 @@ public class BlogService {
 
     }
 
-    PageResult<BlogVO> getBlogList(int start, int num) {
+    public PageResult<BlogVO> getBlogList(int start, int num) {
         PageResult<BlogDisplayUserBO> blogDisplayUserBO = mBlogDao.pageGetBlog(start, num);
         // 数据转换
 
