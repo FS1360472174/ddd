@@ -18,6 +18,7 @@ import java.util.stream.Collectors;
  *
  */
 public interface OpenBlogService {
+
     List<BlogDTO> getMyBlogList(Long userId) ;
 
     BlogDTO getBlogDetail(Long id);
