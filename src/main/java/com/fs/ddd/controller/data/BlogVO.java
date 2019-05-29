@@ -4,14 +4,11 @@
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.fs.dddold.controller.data;
-
-import lombok.Data;
+package com.fs.ddd.controller.data;
 
 /**
  * @author fangzhang
  *
  */
-@Data
 public class BlogVO {
 }

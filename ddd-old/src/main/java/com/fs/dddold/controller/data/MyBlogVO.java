@@ -1,5 +1,5 @@
 /*
- * BlogVO.java
+ * MyBlogVO.java
  * Copyright 2019 Qunhe Tech, all rights reserved.
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
@@ -13,5 +13,5 @@ import lombok.Data;
  *
  */
 @Data
-public class BlogVO {
+public class MyBlogVO {
 }

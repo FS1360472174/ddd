@@ -1,10 +1,10 @@
 /*
- * BlogVO.java
+ * RecommendVO.java
  * Copyright 2019 Qunhe Tech, all rights reserved.
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.fs.dddold.controller.data;
+package com.fs.ddd.controller.data;
 
 import lombok.Data;
 
@@ -13,5 +13,5 @@ import lombok.Data;
  *
  */
 @Data
-public class BlogVO {
+public class RecommendVO {
 }

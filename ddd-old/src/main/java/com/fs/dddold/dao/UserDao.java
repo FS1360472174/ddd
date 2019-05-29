@@ -19,4 +19,8 @@ public class UserDao {
     public List<UserPO> getUserByUserIds(List<Long> userId) {
         return null;
     }
+
+    public UserPO getUserByUserId(Long userId) {
+        return null;
+    }
 }

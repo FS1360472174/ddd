@@ -8,6 +8,7 @@ package com.fs.dddold.service;
 
 import com.fs.dddold.controller.data.BlogDetailVO;
 import com.fs.dddold.controller.data.BlogVO;
+import com.fs.dddold.controller.data.MyBlogVO;
 import com.fs.dddold.dao.BlogDao;
 import com.fs.dddold.dao.BlogDisplayUserBO;
 import com.fs.dddold.dao.BlogPO;
@@ -36,7 +37,7 @@ public class BlogService {
     @Autowired
     private UserDao mUserDao;
 
-    public List<BlogVO> getMyBlogList(Long userId) {
+    public List<MyBlogVO> getMyBlogList(Long userId) {
         // 获取我的博客
         List<BlogPO> blogs = mBlogDao.getMyBlog(userId);
         if (CollectionUtils.isEmpty(blogs)) {

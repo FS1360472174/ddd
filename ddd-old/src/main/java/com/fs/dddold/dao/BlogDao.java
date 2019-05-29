@@ -17,6 +17,11 @@ import java.util.List;
  */
 @Component
 public class BlogDao {
+
+    public int countUserBlog(Long userId) {
+        return 0;
+    }
+
     public List<BlogPO> getMyBlog(Long userId) {
       return null;
     }
