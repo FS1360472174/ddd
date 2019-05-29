@@ -7,6 +7,7 @@
 package com.fs.ddd.controller.ui;
 
 import com.fs.ddd.controller.data.BlogDetailVO;
+import com.fs.ddd.domain.blog.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
