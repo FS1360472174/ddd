@@ -4,9 +4,9 @@
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.fs.ddd.domain.blog;
+package com.fs.ddd.dddexample.domain.blog;
 
-import com.fs.ddd.domain.user.OpenUserService;
+import com.fs.ddd.dddexample.domain.user.OpenUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

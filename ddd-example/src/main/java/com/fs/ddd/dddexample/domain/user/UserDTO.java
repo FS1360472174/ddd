@@ -1,14 +1,17 @@
 /*
- * BlogDTO.java
+ * UserDTO.java
  * Copyright 2019 Qunhe Tech, all rights reserved.
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.fs.ddd.dddexample.domain;
+package com.fs.ddd.dddexample.domain.user;
+
+import lombok.Data;
 
 /**
  * @author fangzhang
  *
  */
-public class BlogDTO {
+@Data
+public class UserDTO {
 }

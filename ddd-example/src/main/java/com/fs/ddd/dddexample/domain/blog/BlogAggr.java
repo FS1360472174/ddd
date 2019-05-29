@@ -4,7 +4,7 @@
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.fs.ddd.domain.blog;
+package com.fs.ddd.dddexample.domain.blog;
 
 import lombok.Data;
 
