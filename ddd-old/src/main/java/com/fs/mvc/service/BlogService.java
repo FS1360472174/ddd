@@ -45,13 +45,13 @@ public class BlogService {
         List<Long> userIds = blogs.stream().map(p -> p.getAuthorId()).collect(Collectors.toList());
         // 获取用户信息
         List<UserPO> userPOS = mUserDao.getUserByUserIds(userIds);
-        // parse Data忽略
+        // TODO
         return Collections.emptyList();
     }
 
     public BlogDetailVO getBlogDetail(Long id) {
         BlogUserBO blogUserBO = mBlogDao.getBlogById(id);
-
+        // TODO
         // 数据parse
         return null;
 
@@ -60,7 +60,7 @@ public class BlogService {
     public PageResult<BlogVO> getBlogList(int start, int num) {
         PageResult<BlogDisplayUserBO> blogDisplayUserBO = mBlogDao.pageGetBlog(start, num);
         // 数据转换
-
+        // TODO
         return null;
     }
 

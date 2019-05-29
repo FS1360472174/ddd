@@ -1,17 +1,17 @@
 /*
- * RecommendVO.java
+ * BlogQueryService.java
  * Copyright 2019 Qunhe Tech, all rights reserved.
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.fs.mvc.controller.data;
+package com.fs.ddd.app;
 
-import lombok.Data;
+import org.springframework.stereotype.Service;
 
 /**
  * @author fangzhang
  *
  */
-@Data
-public class RecommendVO {
+@Service
+public class BlogQueryService {
 }

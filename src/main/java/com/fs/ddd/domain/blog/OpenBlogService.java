@@ -4,14 +4,11 @@
  * Qunhe PROPRIETARY/CONFIDENTIAL, any form of usage is subject to approval.
  */
 
-package com.fs.ddd.domain;
+package com.fs.ddd.domain.blog;
 
 import com.fs.ddd.util.PageResult;
-import org.springframework.util.CollectionUtils;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @author fangzhang

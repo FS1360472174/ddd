@@ -20,7 +20,7 @@ import java.util.List;
  *
  */
 @RestController
-@RequestMapping("/ddd/old/my/homepage")
+@RequestMapping("/api/fangzhang/homepage")
 public class MyHomepageController {
     @Autowired
     private BlogService mBlogService;
@@ -28,13 +28,13 @@ public class MyHomepageController {
     @Autowired
     private UserService mUserService;
 
-    @GetMapping
+    @GetMapping("/blog")
     public List<MyBlogVO> getMyBlogList() {
         Long userId = null;
         return mBlogService.getMyBlogList(userId);
     }
 
-    @GetMapping
+    @GetMapping("/user")
     public UserHomepageVO getUserHomePage() {
         Long userId = null;
         UserHomepageVO homepageVO = mUserService.getUser(userId);
