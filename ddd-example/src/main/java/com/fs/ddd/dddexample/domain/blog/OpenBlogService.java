@@ -15,4 +15,5 @@ import java.util.List;
  *
  */
 public interface OpenBlogService {
+    int getUserBlogCount(Long userId);
 }

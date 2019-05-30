@@ -14,4 +14,17 @@ import lombok.Data;
  */
 @Data
 public class UserHomepageVO {
+    private Long userId;
+
+    private String name;
+
+    private String pic;
+
+    private String area;
+
+    private String intro;
+
+    private String company;
+
+    private Integer blogCount;
 }
