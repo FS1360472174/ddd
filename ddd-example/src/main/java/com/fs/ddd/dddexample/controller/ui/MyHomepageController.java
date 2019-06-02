@@ -6,6 +6,7 @@
 
 package com.fs.ddd.dddexample.controller.ui;
 
+import com.fs.ddd.dddexample.app.BlogDisplayService;
 import com.fs.ddd.dddexample.controller.data.UserHomepageVO;
 import com.fs.ddd.dddexample.domain.blog.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,14 +24,15 @@ import java.util.List;
 @RequestMapping("/api/fangzhang/homepage")
 public class MyHomepageController {
     @Autowired
-    private BlogService mBlogService;
+    private BlogDisplayService mBlogService;
 
     @Autowired
     private UserHomepageService mUserService;
 
     @GetMapping("/blog")
     public List<com.fs.ddd.controller.data.MyBlogVO> getMyBlogList() {
-       return null;
+        Long userId = null;
+       return mBlogService.getMyBlogList(userId);
     }
 
     @GetMapping("/user")
