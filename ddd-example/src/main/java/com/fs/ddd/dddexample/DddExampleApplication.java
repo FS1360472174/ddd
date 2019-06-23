@@ -8,6 +8,13 @@ public class DddExampleApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DddExampleApplication.class, args);
+        testSplit();
     }
 
+
+    private static void testSplit() {
+        String uri = " http://ip:port/cluster/server/flowRules";
+        String [] arrs = uri.split("/");
+        System.out.println(arrs);
+    }
 }
